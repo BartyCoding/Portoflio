@@ -1,4 +1,8 @@
 :root {
+    --textGradient: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    --textColor: #fff;
+    --backgroundColor: #111;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
@@ -8,10 +12,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0;
+    background-color: var(--backgroundColor);
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
+    background: var(--textGradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+p {
+    color: var(--textColor);
+    font-size: 1.25rem;
 }
