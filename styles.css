@@ -82,6 +82,35 @@ section {
     scroll-snap-align: center;
 }
 
+.section2 {
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.section2>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    flex-basis: 40%;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+.title img {
+    max-width: 100%;
+    width: 75%;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.content {
+    flex-basis: 60%;
+}
+
 @media (pointer:none),
 (pointer:coarse) {
     main {
