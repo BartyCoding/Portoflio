@@ -80,6 +80,7 @@ section {
     text-align: center;
     min-height: 100vh;
     scroll-snap-align: center;
+    max-width: 1500px;
 }
 
 .section2 {
@@ -105,13 +106,15 @@ section {
     width: 75%;
     margin-bottom: 2rem;
     user-select: none;
+    max-width: 400px;
+    min-width: 300px;
 }
 
 .content {
     flex-basis: 60%;
 }
 
-@media (pointer:none),
+/* @media (pointer:none),
 (pointer:coarse) {
     main {
         scroll-snap-type: none;
@@ -119,6 +122,24 @@ section {
 
     ::-webkit-scrollbar {
         display: none;
+    }
+} */
+
+@media (max-width: 850px) {
+    .section2 {
+        flex-direction: column;
+    }
+
+    .title {
+        flex-basis: 20%;
+    }
+
+    .content {
+        flex-basis: 20%;
+    }
+
+    .title img {
+        min-width: 200px;
     }
 }
 
